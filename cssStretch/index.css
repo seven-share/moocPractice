@@ -1,0 +1,67 @@
+header {
+    width: 900px;
+    margin: 0 auto;
+}
+
+ul {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(195, 240, 240)
+}
+
+ul li {
+    list-style: none;
+    width: 210px;
+    height: 224px;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px dashed black;
+}
+
+ul li a {
+    display: block;
+    width: 210px;
+    height: 224px;
+    color: black;
+    font-size: 10px;
+}
+
+ul li .text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+ul li img {
+    position: absolute;
+    bottom: -60px;
+    right: -20px;
+}
+
+ul:hover .mask {
+    width: 211px;
+    height: 224px;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.active {
+    width: 270px;
+}
+
+.active a {
+    color: red;
+}
+
+.active img {
+    bottom: 0;
+    right: 0;
+}
+
+.active:hover .mask {
+    opacity: 0;
+}
