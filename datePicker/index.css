@@ -1,0 +1,68 @@
+/* 由于是组件，所以css命名长一些，防止使用过程中被修改
+日历使用绝对定位，不破坏原本网页结构，这样才能最为日历组件使用 */
+
+.ui-datepicker-swrapper {
+    width: 240px;
+    font-size: 16px;
+    color: #666;
+    box-shadow: 2px 2px 8px 2px rgba(128, 128, 128, 0.3);
+    display: none;
+    position: absolute;
+}
+
+.ui-datepicker-swrapper-show {
+    display: block;
+}
+
+.ui-datepicker-swrapper .ui-datepicker-header {
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.ui-datepicker-swrapper .ui-datepicker-btn {
+    font-family: serif;
+    font-size: 20px;
+    width: 20px;
+    height: 50px;
+    color: #1abc9c;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ui-datepicker-swrapper .ui-datepicker-prev-btn {
+    float: left;
+}
+
+.ui-datepicker-swrapper .ui-datepicker-next-btn {
+    float: right;
+}
+
+.ui-datepicker-swrapper .ui-datepicker-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ui-datepicker-swrapper .ui-datepicker-body th,
+.ui-datepicker-swrapper .ui-datepicker-body td {
+    height: 30px;
+    text-align: center;
+}
+
+.ui-datepicker-swrapper .ui-datepicker-body th {
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.ui-datepicker-swrapper .ui-datepicker-body td {
+    border: 1px solid #f0f0f0;
+    font-size: 10px;
+    width: 14%;
+    cursor: pointer;
+}
