@@ -41,7 +41,7 @@
     - [图片放大和水印](https://seven-share.github.io/moocPractice/canvas/drawImage/scaleAndwatermark/index.html)
         - 水印是使用两个canvas，第二次渲染的时候，将水印canvas渲染上去，也可以直接渲染水印的图片
         - 放大效果，注意计算中心点
-    - [放大镜效果](https://seven-share.github.io/moocPractice/canvas/magnifiyingGlass/index.html)
+    - [放大镜效果](https://seven-share.github.io/moocPractice/canvas/drawImage/magnifiyingGlass/index.html)
         - 使用两个canvas，第二个canvas放入放大后的图片，计算点击位置，推算出在放大图片的位置，使用clip剪影，将第二个canvas剪辑，并显示
-    - [图像像素处理](https://seven-share.github.io/moocPractice/canvas/imageData/index.html)
+    - [图像像素处理](https://seven-share.github.io/moocPractice/canvas/drawImage/imageData/index.html)
         - 使用两个canvas，第二个canvas放入放大后的图片，计算点击位置，推算出在放大图片的位置，使用clip剪影，将第二个canvas剪辑，并显示
