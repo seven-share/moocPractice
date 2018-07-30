@@ -1,5 +1,13 @@
 # moocPractice
 ### 模仿慕课网的案例进行学习和思考
+- [从设计稿到网站](https://seven-share.github.io/moocPractice/webpageFromPs/index.html)
+    - 从ps切图做起
+    - 使用flex布局
+    - 效果网页
+    - banner宽度1500px
+    - 其他有效长度为1100px
+    - 在大屏幕上会显示的不好
+    - 仅为布局联系
 - [回到顶部](https://seven-share.github.io/moocPractice/backToTop/backToTop.html)
     - 用到监测滚动条事件。
     - 控制滚动条速度。
