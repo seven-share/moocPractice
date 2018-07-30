@@ -1,0 +1,166 @@
+body{
+    font-family: 'Microsoft YaHei',sans-serif;
+}
+
+/* nav */
+.navbar-default{
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px 0 rgba(50, 50,50, 0.25)
+}
+.navbar-default .navbar-brand{
+    font-size: 26px;
+    font-weight: bold;
+    color: #40D2B1;
+    height: 70px;
+    line-height: 35px;
+}
+.navbar-default .navbar-nav li a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    height: 70px;
+    line-height: 35px;
+}
+.navbar-default .navbar-toggle{
+    border-color: #40D2B1;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #40D2B1;
+}
+.navbar-toggle{
+    margin-top: 18px;
+}
+
+/* memory */
+#memory{
+    margin-top: 70px;
+    background: url('../img/memory-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 95,43, 0.53);
+    padding: 90px 0;
+}
+#memory h1{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+#memory p{
+    font-weight: bold;
+    line-height: 30px;
+}
+#memory img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+#back{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    text-align: center
+}
+#back img{
+    width: 100%;
+    border-radius: 10px;
+}
+#back h3{
+    font-weight: bold
+}
+#beforeDate{
+    padding: 50px;
+    box-shadow: 0 -2px 8px 0 rgba(50, 50,50, 0.25);
+}
+#faraway{
+    padding: 50px;
+    box-shadow: 0 -2px 8px 0 rgba(50, 50,50, 0.25);
+}
+#beforeDate img,#faraway img{
+    width: 100%;
+    border-radius: 20px;
+}
+#beforeDate h3,#faraway h3{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#beforeDate .icon-more,#faraway .icon-more{
+    color: white;
+    background-color: #fff100;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 15px;
+}
+#faraway .icon-more{
+    background-color: #7dabc2;
+}
+#beforeDate p,#faraway p{
+    line-height: 50px;
+}
+#recent{
+    padding: 20px;
+    box-shadow: 0 -2px 8px 0 rgba(50, 50,50, 0.25);
+}
+#recent .col-md-3{
+    text-align: center
+}
+#recent h2{
+    text-align: center;
+    font-weight: bold
+}
+#recent img{
+    margin-top: 30px;
+    width: 100%
+}
+#recent button{
+    width: 100px;
+    margin: 20px 0;
+}
+#contact{
+    background: url('../img/contact-bg.jpg');
+    background-size: cover;
+    color: white
+}
+.filter-contact{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8,8, 0.81);
+    padding: 80px 0;
+}
+#contact h3{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+#contact span{
+    margin-right: 20px;
+}
+#contact p{
+    line-height: 30px;
+}
+#contact .list-bottom{
+    margin-top: 40px
+}
+#contact input{
+    height: 50px;
+    margin-bottom: 30px;
+}
+#contact button{
+    width: 60%;
+    margin-top: 30px;
+    height: 50px;
+}
+footer{
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0
+}

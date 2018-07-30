@@ -1,5 +1,12 @@
 # moocPractice
 ### 模仿慕课网的案例进行学习和思考
+- bootstrap练习
+    - [青春主题网站](https://seven-share.github.io/moocPractice/bootstrapPractice/youth/index.html)
+        - 网页滚动到该位置，该位置的东西有动效产生
+    - [后台网页](https://seven-share.github.io/moocPractice/bootstrapPractice/admin/index.html)
+        - 中规中矩的后台网站设计
+    - [新闻排版练习](https://seven-share.github.io/moocPractice/bootstrapPractice/news/index.html)
+    - [拖动排序练习](https://seven-share.github.io/moocPractice/bootstrapPractice/sotExample/sortTry.html)
 - 原生js操作dom
     - 阅读jsDom编程艺术这本书，同时也根据书中的代码功能片段，自己组合成为一个小网站
     - [点击切换]( https://seven-share.github.io/moocPractice/jsDomBook/onclick/test.html)

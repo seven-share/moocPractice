@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/APlayer.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>myAdminPage</title>
+</head>
+
+<body>
+    <!-- 音乐 -->
+    <div id="music">
+        <div id="aplayer"></div>
+    </div>
+    <!-- 音乐 -->
+    <!-- 导航 -->
+    <nav class="navbar navbar-default navbar-fixed-top clearfix">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">我的后台</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">后台首页</a>
+                    </li>
+                    <li>
+                        <a href="user_list.html">用户管理</a>
+                    </li>
+                    <li>
+                        <a href="content.html">内容管理</a>
+                    </li>
+                    <li>
+                        <a href="tag.html">标签管理</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">前台首页</a>
+                            </li>
+                            <li>
+                                <a href="#">个人主页</a>
+                            </li>
+                            <li>
+                                <a href="#">个人设置</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">我的收藏</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">账户中心</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#back">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 导航 -->
+
+    <div id="panelBox">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4>网站程序有漏洞，请及时更改</h4>
+                        <p>当前版本v3，有严重的安全问题，请及时修复</p>
+                        <p>
+                            <button type="button" class="btn btn-danger">立刻修复</button>
+                            <button type="button" class="btn btn-default" data-dismiss="alert">稍后处理</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">数据统计</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>统计项目</th>
+                                        <th>昨日</th>
+                                        <th>今日</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>注册会员</th>
+                                        <td>300</td>
+                                        <td>360</td>
+                                    </tr>
+                                    <tr>
+                                        <th>登录会员</th>
+                                        <td>543</td>
+                                        <td>432</td>
+                                    </tr>
+                                    <tr>
+                                        <th>转载次数</th>
+                                        <td>35</td>
+                                        <td>3340</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">访客图表</h3>
+                        </div>
+                        <div class="panel-body">
+                            <!-- <canvas id="visitorChart" class="col-md-12"></canvas> -->
+                            <div id="myCanvas"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">今日热帖</div>
+                        <!-- List group -->
+                        <ul class="list-group" id="sortTry">
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <a href="#">1今天转发量最高的帖子，今天是个好日子</a>
+                                <small>2018-1-5</small>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <a href="#">2今天转发量最高的帖子，今天是个好日子</a>
+                                <small>2018-1-5</small>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <a href="#">3今天转发量最高的帖子，今天是个好日子</a>
+                                <small>2018-1-5</small>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <a href="#">4今天转发量最高的帖子，今天是个好日子</a>
+                                <small>2018-1-5</small>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-book"></span>
+                                <a href="#">5今天转发量最高的帖子，今天是个好日子</a>
+                                <small>2018-1-5</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">服务器状态</div>
+                        <div class="panel-body">
+                            <p>内存使用率：40%</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40% Complete (success)</span>
+                                </div>
+                            </div>
+                            <p>数据库使用率：20%</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 20%">
+                                    <span class="sr-only">20% Complete</span>
+                                </div>
+                            </div>
+                            <p>硬盘使用率：60%</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete (warning)</span>
+                                </div>
+                            </div>
+                            <p>CPU使用率：80%</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 80%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">今日热帖</div>
+                        <div class="panel-body">
+                            <div class="media well">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="./static/avatar1.jpg" alt="老哥">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">负责大哥</h4>
+                                    <p>今晚把漏洞修复并升级一下，谢谢</p>
+                                </div>
+                            </div>
+                            <div class="media well">
+                                <div class="media-body text-right">
+                                    <h4 class="media-heading">技术小哥</h4>
+                                    <p>收到，今晚2点准时修复</p>
+                                </div>
+                                <div class="media-right">
+                                    <a href="#">
+                                        <img class="media-object" src="./static/avatar2.png" alt="老哥">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="media well">
+                                <div class="media-body text-right">
+                                    <h4 class="media-heading">技术小哥</h4>
+                                    <p>收到，今晚2点准时修复</p>
+                                </div>
+                                <div class="media-right">
+                                    <a href="#">
+                                        <img class="media-object" src="./static/avatar2.png" alt="老哥">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="media well">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="./static/avatar1.jpg" alt="老哥">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">负责大哥</h4>
+                                    <p>今晚把漏洞修复并升级一下，谢谢</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">你的留言</label>
+                            <textarea class="form-control" rows="8"></textarea>
+                            <button type="submit" class="btn btn-success">留言</button>
+                        </div>
+                    </form>
+                    <div class="panel panel-default">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">团队联系方式</div>
+                        <!-- List group -->
+                        <ul class="list-group">
+                            <li class="list-group-item">站长（龙哥）：<span class="glyphicon glyphicon-earphone"></span>13432534534</li>
+                            <li class="list-group-item">向前哥：<span class="glyphicon glyphicon-earphone"></span>13432534534</li>
+                            <li class="list-group-item">哈哈哥：<span class="glyphicon glyphicon-earphone"></span>13432534534</li>
+                            <li class="list-group-item">山鸡哥：<span class="glyphicon glyphicon-earphone"></span>13432534534</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    Copyright © 1998 - 2018 YouthWeb. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./bs/js/jquery-3.3.1.min.js"></script>
+    <script src="./bs/./js/bootstrap.min.js"></script>
+    <script src="./js/echarts.min.js"></script>
+    <script src="./js/APlayer.min.js"></script>
+    <script src="./js/Sortable.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

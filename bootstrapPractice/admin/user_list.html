@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>myAdminPage</title>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-default navbar-fixed-top clearfix">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">我的后台</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">后台首页</a>
+                    </li>
+                    <li class="active">
+                        <a href="user_list.html">用户管理</a>
+                    </li>
+                    <li>
+                        <a href="content.html">内容管理</a>
+                    </li>
+                    <li>
+                        <a href="tag.html">标签管理</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">前台首页</a>
+                            </li>
+                            <li>
+                                <a href="#">个人主页</a>
+                            </li>
+                            <li>
+                                <a href="#">个人设置</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">我的收藏</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#">账户中心</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#back">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 导航 -->
+    <div id="panelBox">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="panel panel-default">
+                        <ul class="list-group">
+                            <li class="list-group-item active">
+                                <a href="./user_list.html">用户管理</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="./user_search.html">用户搜索</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="" role="button" data-toggle="modal" data-target="#myModal">添加用户</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                    <div class="page-header">
+                        <h4>用户管理</h4>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active">
+                            <a href="#">用户列表</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">用户搜索</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="" role="button" data-toggle="modal" data-target="#myModal">用户添加</a>
+                        </li>
+                    </ul>
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>用户名</th>
+                                <th>邮箱</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>小明</td>
+                                <td>1895498345@qq.com</td>
+                                <td>
+                                    <!-- Single button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            操作
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">编辑</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">删除</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">锁定</a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                                <a href="#">修改密码</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>小明</td>
+                                <td>1895498345@qq.com</td>
+                                <td>
+                                    <!-- Single button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            操作
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">编辑</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">删除</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">锁定</a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                                <a href="#">修改密码</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>小明</td>
+                                <td>1895498345@qq.com</td>
+                                <td>
+                                    <!-- Single button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            操作
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">编辑</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">删除</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">锁定</a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                                <a href="#">修改密码</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>小明</td>
+                                <td>1895498345@qq.com</td>
+                                <td>
+                                    <!-- Single button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            操作
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">编辑</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">删除</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">锁定</a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                                <a href="#">修改密码</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <td>小明</td>
+                                <td>1895498345@qq.com</td>
+                                <td>
+                                    <!-- Single button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            操作
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">编辑</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">删除</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">锁定</a>
+                                            </li>
+                                            <li role="separator" class="divider"></li>
+                                            <li>
+                                                <a href="#">修改密码</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Page navigation" class="pull-right">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    Copyright © 1998 - 2018 YouthWeb. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">添加用户</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="addName">用户名</label>
+                            <input type="email" class="form-control" id="addName" placeholder="用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">请输入密码</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">确认密码</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="addEmail">请输入邮箱</label>
+                            <input type="email" class="form-control" id="addEmail" placeholder="用户ID">
+                        </div>
+                        <div class="form-group">
+                            <label for="userGroup">设置用户组</label>
+                            <select class="form-control" id="userGroup">
+                                <option>限制会员</option>
+                                <option>新手上路</option>
+                                <option>注册会员</option>
+                                <option>中级会员</option>
+                                <option>高级会员</option>
+                            </select>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./bs/js/jquery-3.3.1.min.js"></script>
+        <script src="./bs/./js/bootstrap.min.js"></script>
+        <script src="./js/index.js"></script>
+</body>
+
+</html>
