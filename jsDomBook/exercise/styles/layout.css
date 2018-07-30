@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+header #gallary {
+    width: 1080px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#allPic {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+header nav {
+    height: 50px;
+    width: 1080px;
+    margin-top: 10px;
+}
+
+.fix {
+    position: fixed;
+    top: 0;
+}
+
+header nav ul {
+    height: 50px;
+    padding-left: 15%;
+}
+
+header nav ul li {
+    list-style: none;
+    float: left;
+    font-size: 30px;
+    height: 45px;
+    border-right: 2px black solid;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header nav ul li:last-child {
+    border: none;
+}
+
+article {
+    width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    clear: both;
+}
+
+article h1 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+article p {
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+#personIntroduce {
+    padding: 10px;
+}
+
+#personIntroduce::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.personItem {
+    width: 150px;
+    font-size: 10px;
+    float: left;
+    margin-right: 60px;
+}
+
+.personItem img {
+    width: 150px;
+}
+
+.personItem p {
+    padding: 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+form {
+    /* padding-left: 30%; */
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+}
+
+.thanks {
+    text-align: center;
+    padding-bottom: 50px;
+}

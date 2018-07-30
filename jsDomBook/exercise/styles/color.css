@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(176, 176, 180);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: black;
+}
+
+li:hover,
+li:active {
+    color: rgb(17, 17, 17);
+    background-color: rgb(126, 43, 43);
+}
+
+.here {
+    background-color: rgb(126, 43, 43);
+}
+
+header nav {
+    background-color: rgb(83, 38, 38);
+}
+
+article {
+    color: #223;
+    background-color: #edc;
+}

@@ -1,5 +1,10 @@
 # moocPractice
 ### 模仿慕课网的案例进行学习和思考
+- 原生js操作dom
+    - 阅读jsDom编程艺术这本书，同时也根据书中的代码功能片段，自己组合成为一个小网站
+    - [点击切换]( https://seven-share.github.io/moocPractice/jsDomBook/onclick/test.html)
+    - [图片滚动]( https://seven-share.github.io/moocPractice/jsDomBook/scroll/list.html)
+    - [网站实例模仿]( https://seven-share.github.io/moocPractice/jsDomBook/exercise/index.html)
 - [从设计稿到网站](https://seven-share.github.io/moocPractice/webpageFromPs/index.html)
     - 从ps切图做起
     - 使用flex布局

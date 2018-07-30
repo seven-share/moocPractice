@@ -1,0 +1,19 @@
+article nav,
+article section {
+    padding: 10px;
+}
+
+article nav ul {
+    margin-left: 30px;
+    width: 100px;
+    text-align: center;
+}
+
+article nav ul li {
+    list-style: none;
+    line-height: 1.5em;
+}
+
+.vanish {
+    display: none;
+}
