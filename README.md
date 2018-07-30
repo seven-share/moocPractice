@@ -1,4 +1,4 @@
-# moocPractice
+# webPractice
 ### 模仿慕课网的案例进行学习和思考
 - bootstrap练习
     - [青春主题网站](https://seven-share.github.io/webPractice/bootstrapPractice/youth/index.html)
